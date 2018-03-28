@@ -234,6 +234,7 @@ public class Email {
         Properties properties = new Properties();
         properties.put("mail.smtp.host", this.mailSMTPHost);
         properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.ssl.enable", "true");
         MyAuthenticator myauth = new MyAuthenticator(this.mailUser, this.mailPassword);
         Session session = Session.getDefaultInstance(properties, myauth);
         MimeMessage mimemessage = new MimeMessage(session);
