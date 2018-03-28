@@ -41,10 +41,10 @@ public class EmailUtil {
         }
 
         // 2.设置发送邮箱(保密)
-        /** 邮件相关信息 - 发件人邮件地址 */
-        mail.setFromAddress("xxx@xxxx.com");
+        /** 邮件相关信息 - 发件人邮件地址（或者说是授权人的邮箱地址） */
+        mail.setFromAddress("xxx@qq.com");
         /** 设置 SMTP 服务器:邮件服务器名称或 IP,邮件用户名,密码 */
-        mail.setSMTPHost("mail.xxx.com", "username","password");
+        mail.setSMTPHost("smtp.qq.com", "xxx","xxx");
 
         // 3.邮件标题
         mail.setSubject(entry.subject);
